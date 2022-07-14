@@ -1,0 +1,89 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css");
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans', sans-serif;
+}
+#main{
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
+
+
+body{
+    background: url("./images/bg.jpg") repeat center center fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+header{
+    text-align: center;
+    padding-top: 20px;
+    align-items: center;
+}
+header > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+}
+
+header > h1{
+    font-size: 17px;
+    margin:auto;
+    margin-top: 20px;
+    padding: auto;
+    background: #C392A8;
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 23px;
+    width: 150px;
+}
+
+
+main > ul{
+    box-sizing: border-box;
+    list-style: none;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    max-width: 500px;
+}
+main > ul > a > li{
+    background-color: #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    margin:18px;
+    padding:11px;
+    border-radius: 50px;
+    box-shadow: rgb( 28 32 93 / 24%) 0px 2px 8px 0px;
+}
+
+main > ul > a > li:hover{
+    background-color: #B25B85;
+    border: 3px solid #4C1930;
+    transform: scale(1.05);
+}
+
+
+main > ul > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+li > i{
+    margin-right: 10px;
+}
+
+#animation{
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+}

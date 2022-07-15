@@ -5,12 +5,12 @@ body, html{
     padding: 0;
     font-family: 'Open sans', sans-serif;
 }
+
 #main{
     opacity: 0;
     filter: blur(10px);
     transition: opacity 2s ease-in-out, filter 2s ease-in-out;
 }
-
 
 body{
     background: url("./images/bg.jpg") repeat center center fixed;
@@ -23,6 +23,7 @@ header{
     padding-top: 20px;
     align-items: center;
 }
+
 header > img{
     height: 100px;
     width: 100px;
@@ -43,40 +44,41 @@ header > h1{
     width: 150px;
 }
 
-
 main > ul{
     box-sizing: border-box;
     list-style: none;
     margin: auto;
     padding: 10px;
     font-size: 20px;
-    max-width: 500px;
+    max-width: 460px;
 }
+
 main > ul > a > li{
     background-color: #fffa;
     backdrop-filter: blur(10px) saturate(160%) contrast(180%);
     -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
-    margin:18px;
-    padding:11px;
+    margin:16px;
+    padding:9px;
     border-radius: 50px;
     box-shadow: rgb( 28 32 93 / 24%) 0px 2px 8px 0px;
 }
-
-main > ul > a > li:hover{
-    background-color: #B25B85;
-    border: 3px solid #4C1930;
-    transform: scale(1.05);
-}
-
 
 main > ul > a{
     text-decoration: none;
     color: black;
 }
 
+main > ul > a > li:hover{
+    background-color: #B25B85;
+} 
+
+main > ul > a > li:active{
+    background-color: #4E333C;
+}
 
 li > i{
-    margin-right: 10px;
+
+    margin-left: 6px;
 }
 
 #animation{
